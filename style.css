@@ -14,3 +14,7 @@
   --Dark-cyan: hsl(158, 36%, 37%);
   --cream: hsl(30, 38%, 92%);
 }
+
+body {
+  margin: 0;
+}
