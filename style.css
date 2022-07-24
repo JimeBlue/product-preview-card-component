@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --fraunces-font: 'Fraunces', serif;
+  --monteserrat-fonts: 'Montserrat', sans-serif;
+
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+}
