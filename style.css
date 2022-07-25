@@ -13,6 +13,7 @@
   --Dark-grayish-blue: hsl(228, 12%, 48%);
   --Dark-cyan: hsl(158, 36%, 37%);
   --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
 }
 
 body {
@@ -103,6 +104,10 @@ h6 {
   border: none;
   font-size: 1rem;
   color: #fff;
+}
+
+.btn:hover {
+  background: var(--very-dark-blue);
 }
 
 @media screen and (min-width: 603px) {
