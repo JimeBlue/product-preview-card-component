@@ -20,8 +20,10 @@ body {
 }
 
 /* Card Header */
-
-.card__header img {
+.desktop-image {
+  display: none;
+}
+.mobile-image {
   display: block;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -94,4 +96,32 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .prdocut-preview-card {
+    margin-top: 100px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    width: 50%;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .desktop-image {
+    display: block;
+    /* height: 100%; */
+    max-height: 470px;
+  }
 }
