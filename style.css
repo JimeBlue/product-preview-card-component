@@ -104,3 +104,49 @@ h6 {
   font-size: 1rem;
   color: #fff;
 }
+
+@media screen and (min-width: 603px) {
+  html {
+    display: grid;
+    place-items: center;
+    height: 100%;
+  } /* just to place the card in the middle of the site */
+
+  /* IMP: al darle max-width en px a la card y una width de 50% a cada una de sus hijos hago que sea responsive. Le pongo 602px de max-width porque el breakpoint de la media query es 603px */
+  .card {
+    max-width: 602px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .desktop-image {
+    display: block;
+    height: 100%;
+  }
+
+  .main-img {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .card__header,
+  .card__content {
+    width: 50%;
+  }
+
+  .card__content {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .card__content-container {
+    padding: 32px;
+  }
+
+  .product-description {
+    margin-bottom: 38px;
+  }
+}
